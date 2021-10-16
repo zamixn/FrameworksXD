@@ -22,15 +22,20 @@ public class ParticleData : ScriptableObject
         {
             if (_Particles == null)
             {
-                _Particles = new Dictionary<ParticleType, ParticleSystem>();
-                foreach (var kvp in ParticleDataRaw)
-                {
-                    var e = (ParticleType)Enum.Parse(typeof(ParticleData), kvp.Key);
-                    _Particles.Add(e, kvp.Value);
-                }
+                Initialize();
             }
 
             return _Particles;
+        }
+    }
+
+    public void Initialize()
+    {
+        _Particles = new Dictionary<ParticleType, ParticleSystem>();
+        foreach (var kvp in ParticleDataRaw)
+        {
+            var e = (ParticleType)Enum.Parse(typeof(ParticleType), kvp.Key);
+            _Particles.Add(e, kvp.Value);
         }
     }
 }

@@ -14,26 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ParticleDataRaw:
   - Key: Undefined
-    Value: {fileID: 0}
+    Value: {fileID: 1818574278574088685, guid: 3a566623f78fc0d4b82552977ee75826, type: 3}
   - Key: Gore
     Value: {fileID: 1818574278574088685, guid: 3a566623f78fc0d4b82552977ee75826, type: 3}
-  - Key: Blood
-    Value: {fileID: 0}
-  - Key: t1
-    Value: {fileID: 0}
-  - Key: t2
-    Value: {fileID: 0}
   - Key: t3
     Value: {fileID: 1818574278574088685, guid: e117a5b9d0d71794182f0e208a4cfceb, type: 3}
   - Key: t4
     Value: {fileID: 1818574278574088685, guid: 3a566623f78fc0d4b82552977ee75826, type: 3}
-  - Key: t5
-    Value: {fileID: 0}
-  - Key: t6
-    Value: {fileID: 0}
-  - Key: t7
-    Value: {fileID: 0}
-  - Key: t8
-    Value: {fileID: 0}
-  - Key: t9
-    Value: {fileID: 0}

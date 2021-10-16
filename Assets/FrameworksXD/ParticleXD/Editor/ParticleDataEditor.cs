@@ -90,6 +90,7 @@ public class ParticleDataEditor : Editor
                 ParticleData.ParticleDataRaw.RemoveAt(i);
                 RuntimeEnumEditor.RemoveEnum(ParticleTypeAssetPath, kvp.Key);
                 EditorUtility.SetDirty(target);
+                end--;
             }
             EditorGUILayout.BeginVertical();
             EditorGUI.LabelField(EditorGUILayout.GetControlRect(), $"ID:\t{kvp.Key}");

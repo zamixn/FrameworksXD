@@ -20,8 +20,17 @@ public class ParticleManager : MonoBehaviour
     [Tooltip("Create a scriptable object of particle data and assign. (Create -> FrameworksXD/ParticleData)")]
     [SerializeField] private ParticleData ParticleData;
 
+    private void Awake()
+    {
+        ParticleData.Initialize();
+    }
+
     public void Play(ParticleType type, Vector3 position, Quaternion rotation)
-    { 
-    
+    {
+        var prefab = ParticleData.Particles[type];
+
+        var aliveTime = prefab.main.duration;
+
+        PrefabPool.Instance.Spawn(prefab, aliveTime);
     }
 }
