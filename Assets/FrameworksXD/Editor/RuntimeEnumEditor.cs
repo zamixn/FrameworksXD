@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -70,5 +71,22 @@ public static class RuntimeEnumEditor
 
         if(refreshAssets)
             AssetDatabase.Refresh();
+    }
+
+    public static void RemoveEnum(string enumFilePath, string enumToRemove, bool refreshAssets = false)
+    {
+        var file = File.ReadAllLines(enumFilePath).ToList();
+
+        for (int i = 0; i < file.Count; i++)
+        {
+            if (file[i].Contains(enumToRemove))
+                file.RemoveAt(i);
+        }
+
+        File.WriteAllLines(enumFilePath, file);
+
+        if (refreshAssets)
+            AssetDatabase.Refresh();
+
     }
 }

@@ -12,31 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8f6fae87399a6441a5b1df33cae6a86, type: 3}
   m_Name: ParticleData
   m_EditorClassIdentifier: 
-  Particles:
-    reorderableList:
-      canAdd: 1
-      canRemove: 1
-      draggable: 1
-      expandable: 1
-      multipleSelection: 1
-      isExpanded: 1
-      label:
-        m_Text: Keys
-        m_Image: {fileID: 0}
-        m_Tooltip: 
-      headerHeight: 18
-      footerHeight: 13
-      slideEasing: 0.15
-      verticalSpacing: 2
-      showDefaultBackground: 1
-      elementDisplayType: 0
-      elementNameProperty: 
-      elementNameOverride: 
-      elementIcon: {fileID: 0}
-    reqReferences: {fileID: 0}
-    isExpanded: 1
-    _keyValues: 0000000001000000
-    _keys: 0000000001000000
-    _values:
-    - {fileID: 0}
-    - {fileID: 0}
+  ParticleDataRaw:
+  - Key: Undefined
+    Value: {fileID: 0}
+  - Key: Gore
+    Value: {fileID: 1818574278574088685, guid: 3a566623f78fc0d4b82552977ee75826, type: 3}
+  - Key: Blood
+    Value: {fileID: 0}
+  - Key: t1
+    Value: {fileID: 0}
+  - Key: t2
+    Value: {fileID: 0}
+  - Key: t3
+    Value: {fileID: 1818574278574088685, guid: e117a5b9d0d71794182f0e208a4cfceb, type: 3}
+  - Key: t4
+    Value: {fileID: 1818574278574088685, guid: 3a566623f78fc0d4b82552977ee75826, type: 3}
+  - Key: t5
+    Value: {fileID: 0}
+  - Key: t6
+    Value: {fileID: 0}
+  - Key: t7
+    Value: {fileID: 0}
+  - Key: t8
+    Value: {fileID: 0}
+  - Key: t9
+    Value: {fileID: 0}
